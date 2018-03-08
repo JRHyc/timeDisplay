@@ -1,0 +1,15 @@
+<body>
+    <h1>The current time and date is:</h1>
+
+    @{
+        DateTime CurrentTime = DateTime.Now;
+        string Date = CurrentTime.ToString("MMM dd, yyyy");
+        string Time = CurrentTime.ToString("h:mm tt");
+    }
+    <h2>
+        @Date
+        <br>
+        @Time
+    </h2>
+
+</body>
